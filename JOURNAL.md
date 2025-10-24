@@ -6,7 +6,7 @@
   ==================================================================
 -->
 
-## 10/24/2025 - Opening Words  
+## 10/24/2025 8 PM - Opening Words  
 
 hiii!
 
@@ -28,5 +28,29 @@ attached are some reference images and an idea for the layout of the deck. note 
 
 ![another example stream deck](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NTIxNCwicHVyIjoiYmxvYl9pZCJ9fQ==--27464419cb348500f3eee5e27c40182fda13fbe1/elgato-sd-front_hppm.jpg)
 
+  
+
+## 10/24/2025 9 PM - PCB Research  
+
+hey again!!!
+
+i'm writing this whilst doing my research so there may be some weird thought shifts and questions here that will confuse you. 
+
+so, firstly: i've googled esp32 boards. these have wifi and bluetooth built-in. now i like this idea for wireless connectivity to a computer, however my pc doesn't have an in-built bluetooth thing. this means i'll need a USB connector. however, bluetooth is still a nice option for those that may want to build this themselves.
+
+now, i've looked at alternatives to an esp32 to see pricing and sizing. i've seen the arduino nano R4. i'm avoiding raspberry pi's due to their size. they're quite bulky and honestly (imo) expensive. 
+i've never done anything like this before so i'm strongly wondering how we can connect an arduino to the oled keys. 
+
+[arduino nano r4](/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NTIyOCwicHVyIjoiYmxvYl9pZCJ9fQ==--6ecef728b86376769505e41fa8d782bf39d15cd6/ABX00142_04.box_1000x750.webp)
+
+this is the arduino nano r4's specs. got some decent specs, but esp32's are allegedly quicker. performance shouldnt be an issue for a keypad made of oled screens though. the arduino comes at around 12 gpb, and an esp32 wroom-32 is 10 gbp. i also want usb a or usb c connectivity. NOT micro-usb, ruling raspberry pi's out again.
+
+![esp 32 wroom-32](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NTIzMCwicHVyIjoiYmxvYl9pZCJ9fQ==--a33929e7cd1780ce04a09b7153c30a19aee5566e/51PnDDJHYzL._AC_SL1001_.jpg)
+
+i might just go for the esp32, as they aren't that expensive and are generally quite commonly used. 
+
+after some more research i'm probably going for the esp32 as theyre more powerful (dual core 240mhz over 48mhz) and have more i/o pins. the i/o pins shouldnt matter as we'll have more than enough for 10 keys, a screen and knob - but still. 
+
+now for the next journal, i'm going to look into oled keys. i have even less of an idea of what i'm doing, but here we go.
   
 
