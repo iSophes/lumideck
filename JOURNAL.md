@@ -54,3 +54,33 @@ after some more research i'm probably going for the esp32 as theyre more powerfu
 now for the next journal, i'm going to look into oled keys. i have even less of an idea of what i'm doing, but here we go.
   
 
+## 10/25/2025 - oled research  
+
+okay, oled research now.
+
+i need an oled screen to show things at the top of the deck and oled screens for the keys themselves.
+
+firstly, the keys. i think they're more important than the top screen. now, the stream deck itself uses 72x72 lcd keys, so lets see any oled alternatives that we can use. 
+
+now, i admit - i have used some AI for this to quickly search some options. it's difficult to find decent options for what i want. however, the AI has returned an SSD1306 oled display. 
+
+putting this into google has returned a ![I2C Oled display](https://www.aliexpress.com/p/tesla-landing/index.html?scenario=c_ppc_item_bridge&productId=1005006782987637&_immersiveMode=true&withMainCard=true&src=google&aff_platform=true&isdl=y) which would look more suitable for the screen at the top of the deck. however, i'm unsure whether it'd be good or not as it is quite small. keeping this here for future ref.
+
+i haven't actually done any sizing yet, however we don't want the device to be too large obviously. a 1.3" oled MAYYY(?) be okay for each key. 
+
+UPDATE: okay, after a little bit more research, there aren't actually many (if any) ways to get OLED keys that will support colour. i am NOT inventing it either 😂. we might have to go for an LCD display unfortunately for each key, however OLED may be possible for the top display.
+
+now, some research has shown me ![this](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NTIzNCwicHVyIjoiYmxvYl9pZCJ9fQ==--cd3c7940ee4a3f840cde920f42b38ab5338cbb5a/61hJqm3G3tL._AC_SL1200_.jpg)
+) which is a 1.3" lcd screen. i managed to find ![these](https://www.amazon.co.uk/dp/B0DSDPWM3F/ref=twister_B0DSDPB4MS?_encoding=UTF8&th=1) on amazon for a switch. however, lcds are quite fragile and will end up breaking.
+
+ANOTHER UPDATE: 
+
+I've just started work in KiCad and come across the SW_E3_SA3624's. Now, I don't really know whether these will do us any good, but lets wing it. firstly, the esp board we're using outputs 3.3v. these switches use 5v. so, we need level shifters to fix this for us and add some safety. TXS0108E chips are what i've noticed to work okay, they're bi-directional and cheap. we'd need 2 to handle all 10 keys but it's fine. i'm also adding some capacitors to make it a little bit nicer and more responsive.
+
+below is all the current components. i'll see how we get along :)
+
+![screenshot of all components at the moment (no screen or knob)](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NTMxOCwicHVyIjoiYmxvYl9pZCJ9fQ==--8d9ab577f9cb11194f2affd7ea394ac70eff2a50/image.png)
+
+
+  
+
