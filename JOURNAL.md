@@ -54,7 +54,7 @@ after some more research i'm probably going for the esp32 as theyre more powerfu
 now for the next journal, i'm going to look into oled keys. i have even less of an idea of what i'm doing, but here we go.
   
 
-## 10/25/2025 - oled research  
+## 10/25/2025 12 AM - oled research  
 
 okay, oled research now.
 
@@ -83,4 +83,16 @@ below is all the current components. i'll see how we get along :)
 
 
   
+
+## 10/25/2025 4 PM - some updates!  
+
+okay, its been a bit. i've slept and more research. firstly, i'm changing the esp32 wroom to the esp32 c3 supermini. this is because we need a usb C port, which isnt present on the esp32 wroom.
+
+secondly, i've had a gander at e3 keys - the original key that we chose was a 3624 from this place. and when i tried to look at their datasheet, it wasn't present. e3 keys has said this product is discontinued (which is most likely why the datasheet isnt available!)
+
+so, we need a replacement.
+
+introducing the ![TE6432!](https://lcd-keys.com/files/TE6432_v1.0en.pdf) this is a 64x32 switch with many backlight colours and is widely used in production on things ![such as this :)](https://www.youtube.com/watch?v=--t8OuQtinE) 
+
+i'll have to contact e3 to order these switches, as they unfortunately are not available publicly so pricing is unavailable. before pricing is figured out, i'll try and make this project with those switches. we might be getting places :)  
 
