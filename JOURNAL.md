@@ -92,7 +92,7 @@ secondly, i've had a gander at e3 keys - the original key that we chose was a 36
 
 so, we need a replacement.
 
-introducing the ![TE6432!](https://lcd-keys.com/files/TE6432_v1.0en.pdf) this is a 64x32 switch with many backlight colours and is widely used in production on things ![such as this :)](https://www.youtube.com/watch?v=--t8OuQtinE) 
+introducing the TE6432! ![ ](https://lcd-keys.com/files/TE6432_v1.0en.pdf) this is a 64x32 switch with many backlight colours and is widely used in production on things such as this :) ![ ](https://www.youtube.com/watch?v=--t8OuQtinE) 
 
 i'll have to contact e3 to order these switches, as they unfortunately are not available publicly so pricing is unavailable. before pricing is figured out, i'll try and make this project with those switches. we might be getting places :)  
 
